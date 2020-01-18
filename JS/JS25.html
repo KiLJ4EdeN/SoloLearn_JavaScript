@@ -1,0 +1,21 @@
+<html>
+   <head>
+     <title> </title>
+     <script src="demo25.js"></script>
+   </head>
+   <body>
+    <div id ="demo">
+      <p>some text</p>
+      <p>some other text</p>
+    </div>
+
+    <script>
+     var a = document.getElementById("demo");
+     // gets all elements in the div
+     var arr = a.childNodes;
+     for(var x=0;x<arr.length;x++) {
+       arr[x].innerHTML = "new text";
+     }
+    </script>
+   </body>
+</html>
